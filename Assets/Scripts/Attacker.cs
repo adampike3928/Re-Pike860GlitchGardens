@@ -6,6 +6,8 @@ public class Attacker : MonoBehaviour
 {
     [Range(0f, 5f)]
     float fltCurrentSpeed = 1f;
+    GameObject currentTarget;
+    //current target for attached method
     
     void Update()
     {
@@ -16,6 +18,11 @@ public class Attacker : MonoBehaviour
     public void SetMovementSpeed(float speed)
     {
         fltCurrentSpeed = speed;
+    }
+    public void Attack(GameObject objTarget)
+    {
+        GetComponent<Animator>().SetBool("isAttacking",true);
+        currentTarget = objTarget;
     }
 
 } // Attacker
