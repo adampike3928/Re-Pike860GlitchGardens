@@ -9,7 +9,16 @@ public class Attacker : MonoBehaviour
     float fltCurrentSpeed = 1f;
     GameObject currentTarget;
     //current target for attached method
-    
+
+    private void Awake()
+    {
+        FindObjectOfType<LevelControler>().AttackerSpawned();
+    }
+    private void OnDestroy()
+    {
+        FindObjectOfType<LevelControler>().AttackerKilled();
+    }
+
     void Update()
     {
         // speed to move attacker

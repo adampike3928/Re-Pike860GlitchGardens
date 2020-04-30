@@ -58,7 +58,7 @@ public class DefenderSpawner : MonoBehaviour
         Defender newDefender =
             Instantiate(defender, V2roundedPos, 
             Quaternion.identity) as Defender;
-        Debug.Log(V2roundedPos);
+        
     } // SpawnDefender()
 
 } // class DefenderSapwner

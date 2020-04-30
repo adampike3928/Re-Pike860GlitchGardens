@@ -23,6 +23,11 @@ public class AttackerSpawner : MonoBehaviour
         } // while
     } // Start()
 
+    public void StopSpawning()
+    {
+        boolSpawn = false;
+    }
+
     private void SpawnAttacker()
     {
         var attackerIndex = UnityEngine.Random.Range(0, attackerPrefabArray.Length);
