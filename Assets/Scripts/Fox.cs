@@ -13,7 +13,7 @@ public class Fox : MonoBehaviour
         {
             GetComponent<Animator>().SetTrigger("JumpTrigger");
         }
-        if (otherObject.GetComponent<Defender>())
+        else if (otherObject.GetComponent<Defender>())
         {
             GetComponent<Attacker>().Attack(otherObject);
         }
