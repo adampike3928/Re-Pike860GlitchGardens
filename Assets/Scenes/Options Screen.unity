@@ -204,8 +204,8 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1641870550}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 2
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -696,7 +696,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1073, y: 37}
+  m_AnchoredPosition: {x: -855, y: 37}
   m_SizeDelta: {x: 687.5, y: 141.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &278682315
@@ -712,7 +712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9487807, g: 0.9716981, b: 0.96901494, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1181,6 +1181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1188404265}
   - component: {fileID: 1188404266}
+  - component: {fileID: 1188404267}
   m_Layer: 5
   m_Name: Volume Slider
   m_TagString: Untagged
@@ -1260,6 +1261,20 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1188404267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188404264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b38819033a66e0e4585b852bb6fbd974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeSlider: {fileID: 1188404266}
+  fltdefaultVolume: 0.8
 --- !u!114 &1227002349 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4103994085164391881, guid: fa461c28c9bd7ae4ab1db9fa5aef2437,
@@ -1411,7 +1426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1716, y: -255}
+  m_AnchoredPosition: {x: -1451, y: -255}
   m_SizeDelta: {x: 687.5, y: 141.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1455797601
@@ -1427,7 +1442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9487807, g: 0.9716981, b: 0.96901494, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1818,7 +1833,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1712, y: -116}
+  m_AnchoredPosition: {x: -1463, y: -116}
   m_SizeDelta: {x: 687.5, y: 141.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2067583949
@@ -1834,7 +1849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9487807, g: 0.9716981, b: 0.96901494, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
